@@ -5,6 +5,7 @@ import Background from "./Background";
 import "./Dashboard.sass";
 import Overlay from "./Overlay";
 import Widgets from "./Widgets";
+import Smoke from "./Smoke";
 
 const Dashboard: React.FC = () => {
   const background = useValue(db, "background");
@@ -20,6 +21,7 @@ const Dashboard: React.FC = () => {
       <Background />
       <Widgets />
       <Overlay />
+      <Smoke/>
     </div>
   );
 };
